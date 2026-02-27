@@ -1,0 +1,131 @@
+body {
+    background: url('img/bg-ps.jpg');
+    background-color: #181818;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+
+    text-align: center;
+    color: white;
+    font-family: "Link Sans Product", sans-serif;
+
+    backdrop-filter: blur(5px);
+}
+
+.wrapper {
+    min-width: 250px;
+    margin: 0 auto;
+    /* background: #1a1a1a; */
+    background: linear-gradient(0deg, rgba(26, 26, 26, .3) 0%, rgba(42, 42, 42, .6) 100%);
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* border: 1px solid #323232; */
+
+    /* background: rgba(255,255,255, 0.01);
+    backdrop-filter: blur(20px); */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.block {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+
+    li {
+        margin: 1.2rem 0;
+        margin-right: 2rem;
+
+        svg:hover {
+            transform: scale(1.2);
+            transition-property: transform;
+            transition-duration: .15s;
+        }
+
+        svg {
+            vertical-align: middle;
+            height: 1.7rem;
+        }
+
+    }
+}
+
+.sep {
+    height: 2px;
+    margin-bottom: 2rem;
+    background-color: #111111;
+}
+
+.caps {
+    background-color: #0e0e0e;
+    padding: .8rem;
+    padding-bottom: 0rem;
+    border-radius: .5rem;
+
+    .img-wrapper {
+        width: 100%;
+        border-top-left-radius: .2rem;
+        border-top-right-radius: .2rem;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+
+            &:hover {
+                transition: all .3s;
+                filter: brightness(130%);
+                transform: scale(1.03);
+            }
+        }
+    }
+
+    div {
+        display: block;
+        text-align: center;
+        line-height: 4rem;
+        font-size: 1rem;
+
+        a {
+            display: inline-block;
+            font-weight: normal;
+            transition: transform .15s;
+
+            &:hover {
+                text-decoration: underline;
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
+
+.bottom-links {
+    margin-top: 5rem;
+    color: #ffffff77;
+    font-size: .8rem;
+}
+
+
+@media only screen and (min-width: 620px) {
+    .wrapper {
+        max-width: 500px;
+
+        margin-top: 3rem;
+
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+    }
+
+    .block {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
