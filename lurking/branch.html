@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ctrl Freak</title>
+</head>
+
+
+
+<body>
+
+    <h1 style="margin: 30px">Get a custom branch for a Steam game</h1>
+
+    <table style="margin: 0 auto;" cellpadding="8">
+        <tr>
+            <td><img src="1.png" /></td>
+            <td>
+                <ul style="line-height: 30px">
+                    <li>Right click the game / demo</li>
+                    <li>Click Properties</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="2.png" /></td>
+            <td>
+                <ul style="line-height: 30px">
+                    <li>1. Click "Game versions & Betas"</li>
+                    <li>2. Enter the access code <span id="code" style="font-weight:bold"></span> in the text field</li>
+                    <li>3. Click the "Check code" button</li>
+                    <li>4. A new game version will appear In the list. Select it</li>
+                    <li>The game will automatically update to the correct version</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+<script type="text/javascript">
+    let params = new URLSearchParams(document.location.search);
+    document.getElementById("code").textContent = params.get("code");
+</script>
+
+</html>
